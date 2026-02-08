@@ -1,0 +1,112 @@
+App Name: Moneyflo
+Last updated: 08 February 2026
+
+Introduction
+We are committed to protecting your privacy and ensuring you have a positive experience with our app. This Privacy Policy explains how we collect, use, and protect your financial information.
+
+1. Information We Collect
+1.1 Personal Information:
+
+We only collect your nickname and device ID to help us maintain your account and preferences.
+
+1.2 Financial Data:
+
+We collect expense transactions, budget information, category data, and notes you add to track your spending. All financial data is stored locally on your device by default.
+
+1.3 Optional Cloud Sync:
+
+If you choose to enable cloud sync, your data will be encrypted and backed up to our secure servers. Cloud sync is entirely optional and can be disabled at any time from Settings.
+
+1.4 Usage Data:
+
+We collect anonymized information about your interactions with our app, such as features used and session duration, to improve user experience.
+
+2. How We Use Your Information
+2.1 To Provide and Improve Services:
+
+We use your information to deliver, maintain, and improve our services, personalize your experience with AI-powered insights, and develop new features.
+
+2.2 To Provide AI Insights:
+
+Your anonymized spending patterns may be analyzed locally on your device to provide personalized financial recommendations and insights.
+
+2.3 For Research and Analytics:
+
+We use aggregated, anonymized data to understand how our services are used and to improve app performance.
+
+3. Sharing Your Information
+3.1 Service Providers:
+
+We DO NOT share your personal financial information with third-party service providers. Your data remains private and secure.
+
+3.2 Legal Compliance:
+
+We may disclose your information only if required by law or in response to valid legal requests by authorities.
+
+3.3 Business Transfers:
+
+In the event of a merger, acquisition, or sale of assets, your information may be transferred to the acquiring entity with prior notice to you.
+
+4. Your Choices
+4.1 Access and Control:
+
+You have full control over your data. You can:
+
+View, edit, or delete transactions anytime
+
+Export your data to Excel/CSV
+
+Enable or disable cloud sync
+
+Clear all data from Settings
+
+4.2 Data Retention:
+
+Local data: Stored on your device until you manually delete it
+
+Cloud data: Retained while cloud sync is enabled; deleted within 30 days after you disable sync or delete your account
+
+4.3 Opt-Out:
+
+You can opt out of promotional notifications and analytics collection from Settings. Core app functionality remains unaffected.
+
+5. Security
+We take your financial privacy seriously:
+
+All data is encrypted at rest and in transit
+
+Cloud sync uses bank-level encryption (AES-256)
+
+We never sell your data to third parties
+
+Offline-first architecture means your data stays on your device by default
+
+However, no internet transmission is ever fully secure. Please use strong device passcodes and biometric authentication when available.
+
+6. Data Storage & Backup
+6.1 Local Storage:
+
+By default, all your financial data is stored only on your device. We have no access to this data.
+
+6.2 Cloud Backup (Optional):
+
+If you enable cloud sync:
+
+Data is encrypted before leaving your device
+
+Stored on secure servers with automatic backups
+
+You can disable cloud sync anytime, and all cloud data will be deleted
+
+7. Children's Privacy
+Moneyflo is not intended for users under 13 years of age. We do not knowingly collect information from children.
+
+8. Changes to This Privacy Policy
+We may update this Privacy Policy periodically. We will notify you of significant changes through the app and update the "Last updated" date above.
+
+9. Contact Us
+If you have any questions or concerns about this Privacy Policy or your data, please contact us at:
+
+Email: moodsydev@gmail.com
+
+Your money, your data, your control. 💰
