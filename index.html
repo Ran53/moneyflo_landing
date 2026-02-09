@@ -11,22 +11,18 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Moneyflo - Smart Expense Tracking Made Simple">
-
-
-
-
     <meta property="og:description"
         content="Take control of your finances with AI-powered insights and effortless expense tracking.">
     <meta property="og:type" content="website">
 
     <title>Moneyflo - Smart Expense Tracking</title>
-    <!-- ✅ ADD FAVICON HERE -->
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-
 
     <style>
         * {
@@ -167,7 +163,6 @@
             overflow: hidden;
         }
 
-        /* Animated background orbs */
         .hero::before {
             content: '';
             position: absolute;
@@ -312,7 +307,6 @@
             transform: translateY(-4px);
         }
 
-        /* Scroll indicator */
         .scroll-indicator {
             position: absolute;
             bottom: 2rem;
@@ -348,7 +342,140 @@
             }
         }
 
-        /* ============ FEATURES SECTION (DARK MODE) ============ */
+        /* ============ PHONE DEMO SECTION ============ */
+        .phone-demo {
+            background: var(--black);
+            padding: 7rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phone-demo::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(251, 236, 93, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .demo-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .phone-mockup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+            margin-top: 3rem;
+        }
+
+        .phone-frame {
+            width: 320px;
+            height: 650px;
+            background: var(--black);
+            border-radius: 40px;
+            padding: 12px;
+            box-shadow:
+                0 0 0 2px rgba(255, 255, 255, 0.1),
+                0 20px 60px rgba(0, 0, 0, 0.8),
+                inset 0 0 20px rgba(255, 255, 255, 0.05);
+            position: relative;
+            animation: float-phone 6s ease-in-out infinite;
+            transform: rotateY(-5deg) rotateX(5deg);
+        }
+
+        @keyframes float-phone {
+
+            0%,
+            100% {
+                transform: rotateY(-5deg) rotateX(5deg) translateY(0px);
+            }
+
+            50% {
+                transform: rotateY(-5deg) rotateX(5deg) translateY(-20px);
+            }
+        }
+
+        .phone-notch {
+            position: absolute;
+            top: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 30px;
+            background: var(--black);
+            border-radius: 0 0 20px 20px;
+            z-index: 10;
+        }
+
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: var(--dark-bg);
+            border-radius: 32px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .screen-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .screen-slide.active {
+            opacity: 1;
+        }
+
+        /* Screen image styling */
+        .screen-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 28px;
+        }
+
+        /* Screen indicators - NOW CENTERED PROPERLY */
+        .screen-indicators {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 3rem;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: var(--primary-yellow);
+            width: 32px;
+            border-radius: 6px;
+        }
+
+        .indicator:hover {
+            background: rgba(251, 236, 93, 0.6);
+        }
+
+        /* ============ FEATURES SECTION ============ */
         .features {
             background: var(--dark-bg);
             padding: 7rem 2rem;
@@ -441,7 +568,7 @@
             font-size: 1rem;
         }
 
-        /* ============ HOW IT WORKS (DARK MODE) ============ */
+        /* ============ HOW IT WORKS ============ */
         .how-it-works {
             background: var(--black);
             padding: 7rem 2rem;
@@ -667,6 +794,24 @@
             .nav-links {
                 display: none;
             }
+
+            .phone-frame {
+                width: 280px;
+                height: 570px;
+                transform: rotateY(0deg) rotateX(0deg);
+            }
+
+            @keyframes float-phone {
+
+                0%,
+                100% {
+                    transform: translateY(0px);
+                }
+
+                50% {
+                    transform: translateY(-15px);
+                }
+            }
         }
     </style>
 </head>
@@ -701,6 +846,44 @@
         <div class="scroll-indicator">↓</div>
     </section>
 
+    <!-- ============ PHONE DEMO SECTION ============ -->
+    <section class="phone-demo">
+        <div class="demo-content">
+            <h2 class="section-title">See It In Action</h2>
+            <p class="section-subtitle">Three steps to financial clarity</p>
+
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <!-- Screen 1: Add Expense -->
+                        <div class="screen-slide active">
+                            <img src="screen-1.png" alt="Add Expense Screen" class="screen-image">
+                        </div>
+
+                        <!-- Screen 2: Analytics -->
+                        <div class="screen-slide">
+                            <img src="screen-2.png" alt="Analytics Screen" class="screen-image">
+                        </div>
+
+                        <!-- Screen 3: Insights -->
+                        <div class="screen-slide">
+                            <img src="screen-3.png" alt="AI Insights Screen" class="screen-image">
+                        </div>
+                    </div>
+                    <div class="phone-notch"></div>
+                </div>
+            </div>
+
+            <!-- Screen indicators (moved OUTSIDE phone-mockup) -->
+            <div class="screen-indicators">
+                <span class="indicator active" data-screen="0"></span>
+                <span class="indicator" data-screen="1"></span>
+                <span class="indicator" data-screen="2"></span>
+            </div>
+        </div>
+    </section>
+
+
     <!-- ============ FEATURES SECTION ============ -->
     <section class="features" id="features">
         <div class="section-container">
@@ -711,7 +894,7 @@
                 <div class="feature-card">
                     <div class="feature-icon">☁️</div>
                     <h3>Offline-first With Cloud Sync</h3>
-                    <p>Your device, your data. Sync with cloud for backup and for multi-device use.</p>
+                    <p>Your device, your data. Sync with cloud for backup and for data recovery.</p>
                 </div>
 
                 <div class="feature-card">
@@ -773,7 +956,8 @@
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Save Money</h3>
-                    <p>Set budgets, get AI suggestions, and watch your savings grow. Achieve your financial goals
+                    <p>Track income & spending, get AI suggestions, and watch your savings grow. Achieve your financial
+                        goals
                         faster.</p>
                 </div>
             </div>
@@ -813,7 +997,7 @@
             <div class="footer-links">
                 <a href="mailto:moodsydev@gmail.com">Contact</a>
                 <a href="privacy_policy.txt" target="_blank">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
+                <!-- <a href="#terms">Terms of Service</a> -->
             </div>
 
             <p style="margin-top: 2.5rem; font-size: 0.85rem; opacity: 0.6;">Made with 💛</p>
@@ -845,6 +1029,34 @@
             }
         });
 
+        // ============ PHONE SCREEN CAROUSEL ============
+        let currentScreen = 0;
+        const screens = document.querySelectorAll('.screen-slide');
+        const indicators = document.querySelectorAll('.indicator');
+
+        function showScreen(index) {
+            screens.forEach((screen, i) => {
+                screen.classList.toggle('active', i === index);
+            });
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+        }
+
+        // Auto-rotate screens every 4 seconds
+        setInterval(() => {
+            currentScreen = (currentScreen + 1) % screens.length;
+            showScreen(currentScreen);
+        }, 4000);
+
+        // Click indicators to change screen
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentScreen = index;
+                showScreen(currentScreen);
+            });
+        });
+
         // ============ INTERSECTION OBSERVER FOR ANIMATIONS ============
         const observerOptions = {
             threshold: 0.3,
@@ -861,7 +1073,7 @@
         }, observerOptions);
 
         // Observe sections
-        document.querySelectorAll('.features, .how-it-works').forEach(section => {
+        document.querySelectorAll('.features, .how-it-works, .phone-demo').forEach(section => {
             section.style.opacity = '0';
             section.style.transform = 'translateY(30px)';
             section.style.transition = 'all 0.8s ease';
@@ -909,8 +1121,8 @@
 
         // ============ CONSOLE EASTER EGG ============
         console.log('%c💰 Moneyflo', 'font-size: 48px; font-weight: bold; color: #FBEC5D;');
-        console.log('%cLooking for a job? We\'re hiring! 🚀', 'font-size: 16px; color: #10B981;');
-        console.log('%cEmail: jobs@moneyflo.app', 'font-size: 14px;');
+        console.log('%c🔍 Hey curious developer! Nice to see you here.', 'font-size: 16px; color: #10B981;');
+        console.log('%c📧 Found a bug? Email: moodsydev@gmail.com', 'font-size: 14px;');
     </script>
 </body>
 
